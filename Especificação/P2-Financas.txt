@@ -1,0 +1,99 @@
+1. Introdução
+
+1.1. Propósito do documento
+O propósito deste documento é apresentar a descrição dos serviços e funções que o sistema a ser desenvolvido deve prover, suas restrições de operação e propriedades gerais, bem como seus requisitos funcionais e não funcionais.
+
+1.2. Escopo 
+Algumas pessoas utilizam o caderno para organizar suas finanças pessoais, para tentar não ficar com o saldo negativo no banco ao final do mês. No entanto, quando se tem muitas movimentações é necessário algo mais completo para auxiliar nesse planejamento. O projeto consiste na construção de uma ferramenta que possua funções para uma organização eficiente de contas correntes. O sistema permite que o usuário controle suas movimentações e visualize toda a sua renda e despesas.
+1.3. Definições, acrônimos e abreviações
+1.3.1. Identificação dos requisitos 
+A referência dos requisitos é formada pela subseção em que eles estão descritos seguido do identificador do requisito, como o exemplo [RF01].
+
+1.3.2. Classificação dos requisitos funcionais
+Os requisitos funcionais podem ser classificados como:
+(E): evidente, o usuário tem conhecimento da função que foi executada.
+(O): oculta, a função executada não é visível para o usuário.
+
+
+1.4. Referências
+
+Home Bank. Disponível em: <http://homebank.free.fr> . Acesso em 25 nov. 2014
+
+Microsoft Money, organizador  de finanças pessoais. Disponível em: <http://www.superdownloads.com.br/windows/1526-microsoft-money-organizador-gratis-de-financas-pessoais.htm>. Acesso em 27 nov. 2014
+
+Aplicativo Mobbils para Android. Disponível em <https://play.google.com/store/apps/details?id=br.com.gerenciadorfinanceiro.controller&hl=pt_BR>
+
+Gnucash. Disponível em: <http://www.gnucash.org>. Acessado em 25 nov. 2014.
+
+1.5. Visão geral
+O documento traz no capítulo 2 a descrição geral do produto, bem como suas funcionalidades, interfaces de relacionamento e o usuário que utilizará o mesmo.
+No capítulo 3 há a sessão com todos os requisitos funcionais, que descrevem detalhadamente o que o Sistema fará. E finalizando, o capítulo 4 contém os requisitos não-funcionais.
+
+2. Descrição geral
+2.1. Perspectiva do produto
+2.1.1. Relacionamento com outros Sistemas
+O Sistema não se relacionará com nenhum outro Sistema.
+
+2.1.2. Relacionamento com o usuário
+O Sistema permite várias funcionalidades para seus usuários. O usuário pode adicionar sua conta, fazer lançamentos de receitas e despesas, movimentações futuras, gerar extratos e acompanhar o saldo das suas contas.
+
+2.1.3. Interface de software 
+O Sistema funcionará em computadores que não necessitam de acesso à internet.
+
+2.2. Funcionalidades do produto
+O usuário poderá registrar contas correntes no Sistema para que possa controlar as movimentações financeiras realizadas.
+O usuário poderá registrar, editar ou remover movimentações que já aconteceram ou que acontecerão.
+O usuário poderá realizar consultas no Sistema, tais como o saldo ou emissão do extrato de uma conta corrente.
+O Sistema deverá informar ao usuário que o limite mínimo de saldo (pré-estipulado pelo usuário) foi atingido.
+
+2.3. Características do usuário
+O usuário foco é aquele que tem interesse em utilizar de meios para um controle de suas finanças pessoais sem a necessidade de interação direta com o seu respectivo órgão bancário. Este usuário não tem conhecimentos diretos em regras e/ou jargões bancários, porém necessita que haja um controle de seu saldo, suas despesas e suas receitas de forma compreensível à uma pessoa leiga no assunto.
+
+2.4 Restrições
+A única restrição é quanto à segurança: apenas os responsáveis pelo controle das contas poderão ter acesso aos dados relativos às contas.
+
+2.5 Declarações e Dependências
+Para o desenvolvimento é necessária a utilização de várias ferramentas que, por tratar-se de um trabalho acadêmico, deverão ser escolhidas pelo desenvolvedor.
+
+
+3. Requisitos funcionais
+[RF01] O Sistema deve permitir ao usuário a criação de novas contas correntes, definindo o nome da instituição financeira, nome da conta, número da conta corrente, saldo inicial e limite mínimo de saldo. (E)
+[RF02] O Sistema deve permitir que o usuário faça o lançamento de movimentações de receitas ou despesas informando o valor, data, descrição e uma conta corrente já registrada no Sistema. (E)
+[RF03] O Sistema deve permitir que o usuário confirme uma movimentação, ou seja, indicar ao Sistema que a movimentação foi efetuada. (E)
+[RF04] O Sistema deve atualizar o saldo da conta corrente após uma movimentação ser confirmada pelo usuário. (O)
+[RF05] O Sistema deve permitir que o usuário remova ou altere as movimentações. (E)
+[RF06] O Sistema deve permitir que o usuário realize consulta em uma conta corrente. (E)
+[RF06.1] O Sistema deve permitir que o usuário consulte o saldo. (E)
+[RF06.2] O Sistema deve permitir que o usuário consulte o extrato por período, exibindo a data, descrição, valor da movimentação e saldo. (E)
+[RF07] O Sistema deve listar as movimentações exibindo a data, descrição e valor, fazendo a distinção entre despesa e receita. (E) 
+[RF08] O Sistema deve informar o usuário quando o limite mínimo de saldo estabelecido for atingido. (E)
+
+
+4. Requisitos não funcionais
+[RNF01] O Sistema deverá ser independente de plataforma.
+[RNF02] O Sistema deve ter uma interface simples e de fácil operação.
+[RNF03] O Sistema deve armazenar e apresentar os dados de maneira consistente.
+
+5. Sumário
+1. Introdução	1
+1.1. Propósito do documento	1
+1.2. Escopo	1
+1.3. Definições, acrônimos e abreviações	1
+1.3.1. Identificação dos requisitos	1
+1.3.2. Classificação dos requisitos funcionais	1
+1.4. Referências	2
+1.5. Visão geral	2
+2. Descrição geral	3
+2.1. Perspectiva do produto	3
+2.1.1. Relacionamento com outros Sistemas	3
+2.1.2. Relacionamento com o usuário	3
+2.1.3. Interface de software	3
+2.2. Funcionalidades do produto	3
+2.3. Características do usuário	3
+2.4 Restrições	4
+2.5 Declarações e Dependências	4
+3. Requisitos funcionais	5
+4. Requisitos não funcionais	6
+5. Sumário	7
+
+
