@@ -17,7 +17,7 @@ Programador: Paulo (usuário no PBR)
 SQA: Felipe
 
 Projeto 4
-Gerente: Ferlipe
+Gerente: Felipe
 Projetista: Paulo
 Programador: Luan (usuário no PBR)
 SQA: Josimar

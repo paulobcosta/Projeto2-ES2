@@ -1,0 +1,26 @@
+Estimativa de Esforço destinado PBR -- Projeto 2
+
+Gerente: Paulo B.
+Função: Projetista
+Integrante: Felipe V.
+Estimativa de Tempo: 20 horas
+
+ 
+Função: Testador
+Integrante: Luan B. 
+Estimativa de Tempo: 8 horas
+
+Função: Usuário
+Integrante: Josimar L.
+Estimativa de Tempo: 4 horas
+
+
+
+
+
+
+
+
+
+
+  
