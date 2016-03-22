@@ -1,23 +1,23 @@
 Projeto 1
 Gerente: Luan
 Projetista: Josimar
-Programador: Felipe
+Programador: Felipe (usuário no PBR)
 SQA: Paulo
 
 Projeto 2
-Gerente: Paulo
+Gerente: Paulo 
 Projetista: Felipe
-Programador: Josimar
+Programador: Josimar (usuário no PBR)
 SQA: Luan
 
 Projeto 3
 Gerente: josimar
 Projetista: Luan
-Programador: Paulo
+Programador: Paulo (usuário no PBR)
 SQA: Felipe
 
 Projeto 4
 Gerente: Ferlipe
 Projetista: Paulo
-Programador: Luan
+Programador: Luan (usuário no PBR)
 SQA: Josimar
