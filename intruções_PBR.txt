@@ -1,0 +1,52 @@
+Cada revisor possui um cenário:
+
+Todo "cenário" consiste de duas partes:
+- Construir um modelo do documento que está sob
+revisão a fim de aumentar o entendimento sobre o
+mesmo.
+- Responder questões sobre o modelo e do artefato revisado, tendo como
+foco itens e problemas de interesse da organização.
+
+Projetista
+- Use o diagrama que lhe for mais conveniente
+- Questões:
+ -- Todos os elementos (dados, estruturas de dados e funções) necessários foram definidos?
+ -- Todas as interfaces são especificadas e consistentes?
+ -- Foi possível definir todos os tipos de dados? (ex: unidades e precisão)
+ -- Todas informações necessárias para o projeto estão disponíveis?
+ -- Está tudo especificado? (há alguma especificação funcional/requisito faltando?)
+ -- Há algum ponto em que você não está certo sobre o que deve ser feito devido à falta de clareza na especificação do requisito/especificação funcional?
+ -- A especificação funcional/requisito faz sentido considerando o que você sabe sobre o assunto ou considerando o que foi especificado nas descrições gerais/introdução?
+
+Usuário
+- Definir um conjunto de funções que o usuário esteja apto a executar, iniciando dos mais óbvios até chegar  nos menos comuns ou especiais.
+- Usar mockups? Casos de Uso? Você Decide!
+- Questões:
+ -- Todas as funções necessárias para escrever os cenários estão especificadas no documento de requisitos ou na especificação funcional?
+ -- As condições iniciais para definir (iniciar) os cenários estão claras e corretas?
+ -- As interfaces entre as funções estão bem definidas e compatíveis (por ex., as entradas de uma função têm ligação com as saídas da função anterior?)
+ -- Você consegue chegar num estado do sistema que deve ser evitado (por ex., por razões de segurança)?
+ -- Os cenários podem fornecer diferentes respostas dependendo de como a especificação é interpretada?
+ -- A especificação funcional faz sentido de acordo com o que você conhece sobre essa aplicação ou sobre o que foi especificado em uma descrição geral?
+
+Testador
+- Para cada especificação funcional ou requisito gere um ou um conjunto de casos de teste que faça com que você se assegure de que a implementação do sistema satisfaz a especificação funcional ou o requisito. 
+- Questões:
+ -- Você tem toda informação necessária para identificar o item a ser testado? Você pode gerar um bom caso de teste para cada item?
+ -- Você tem certeza de que os teste gerados fornecerão os valores corretos nas unidades corretas?
+ -- Existe uma outra interpretação dos requisitos de forma que o programador possa estar se baseando nela?
+ -- Existe um outro requisito para o qual você poderia gerar um caso de teste similar, mas que poderia levar a um resultado contraditório?
+ -- A especificação funcional ou de requisitos faz sentido de acordo com aquilo que você conhece sobre a aplicação ou a partir daquilo que está descrito na especificação geral?
+
+Revisar o documento de requisitos seguindo as diretrizes das perspectivas. 
+ - O gerente escolhe os membros/papéis de seu projeto.
+ - Cara revisor deve gerar uma lista de defeitos. 
+  -- A lista deve conter: o autor, o papel, o registro de atividades (dia, hora inicial e final, mesmo que quebrada em vários períodos), e os defeitos. 
+  -- As listas individuais devem ser colocadas sob controle de versão.
+ - Ao final do processo de revisão, o gerente deve se reunir com os revisores e todos devem gerar um laudo de revisao contendo uma lista única de defeitos
+  -- O formato do laudo deve ser determinado pelo gerentes 
+  -- Deve haver apenas um formato de laudo para todo o grupo (ou seja, os 4 gerentes devem se reunir e decidir) (procurem na internet, livros, artigos, teses, dissertações)
+  -- O laudo de ser colocado sob controle de versão.
+ - Lembrem-se, TODA atividade deve ser registrada (dia, hora inicial, hora final). 
+  -- Idealmente, esses registros devem ser consonantes com os logs do controle de versão, não!?.
+  -- Os dados dos registros de atividades serão usados mais adiante!!!
