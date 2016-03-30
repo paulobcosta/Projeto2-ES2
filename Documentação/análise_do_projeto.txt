@@ -38,3 +38,24 @@ realizada.
 Remover e alterar movimentações:
 O sistema deve permitir que um usuário altere ou remova movimentações.
 Se marcadas, deve pedir confirmação
+1.O usuário pesquisa por uma movimentação;
+2.O usuário pode escolher entre alterá-la ou removê-la;
+2.1.Se alterá-la, todos os campos são apresentados;
+2.2Se remover deverá ser excluído;
+3.O diálogo de confirmação deverá aparecer. Se escolhido sim, efetua a
+operação.
+4.Se a movimentação estiver marcada como concluida, o sistema deverá
+atualizar o saldo.
+
+Consultar conta corrente:
+1.O usuário escolhe uma conta;
+2.O usuário seleciona a conta
+3.O sistema exibe o saldo e o botão para o estrato, filtrado por data e
+que exibe:data, descrição, valor da movimentação e saldo
+
+Listar movimentações
+1.O sistema deverá listar todas as movimentações, informando se receita
+ou despesa,data e valor.
+
+Aviso de saldo baixo
+1.O sistema informa que o saldo mínimo foi atingido.
