@@ -1,0 +1,40 @@
+Requisitos e descrições iniciais:
+* Não precisa de conexão com a Internet;
+* Sistema desktop;
+*Restrição de segurança: apenas o responsável por uma conta pode ter
+acesso a ela (sistema de login? não especificado)
+* Não é informado se o sistema deverá ser multiusuário. (Possível
+defeito)
+
+Casos de uso:
+
+Cadastrar conta:
+Pré-requisito:O usuário precisa estar autenticado
+1.O usuário informará os seguintes dados de cadastro:
+nome da instituição financeira, nome da conta, número da conta corrente, saldo inicial e limite mínimo de
+saldo;
+2.O sistema apresenta confirmação de sucesso.
+
+Movimentação:
+Pré-requisito:estar autenticado
+1.O usuário poderá lançar uma movimentação, que pode ser receita ou despesa;
+2.O usuário informa ao sistema os seguintes dados:valor, data, descrição e uma conta associada já registrada.
+3.O sistema deve informar que a movimentação foi registrada.
+*Possível erro: ela não deve alterar o estrato até ser confirmada -
+possível falta de clareza.
+
+Confirmar movimentação:
+Pré-requisito:estar autenticado
+1.O usuário busca por uma movimentação;
+2.O usuário marca-a como ocorrida
+3.Caso de uso: atualizar saldo;
+3.1.Se o saldo atingir o saldo mínimo, o usuário deve ser avisado;
+4.O valor final do saldo deve ser informado.
+
+Atualizar saldo:
+1.O sistema deve atualizar o saldo do usuário com base na movimentação
+realizada.
+
+Remover e alterar movimentações:
+O sistema deve permitir que um usuário altere ou remova movimentações.
+Se marcadas, deve pedir confirmação
