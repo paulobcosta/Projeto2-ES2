@@ -1,3 +1,8 @@
+Análise PBR do projeto
+29/03/2016 - 13:50 - 15:30
+30/03/2016: 15:50 - 17:30;
+31/03/2016: 09:30-
+
 Requisitos e descrições iniciais:
 * Não precisa de conexão com a Internet;
 * Sistema desktop;
@@ -59,3 +64,11 @@ ou despesa,data e valor.
 
 Aviso de saldo baixo
 1.O sistema informa que o saldo mínimo foi atingido.
+
+*Defeitos encontrados:
+- Interface não descrita;
+- Forma de login não definida;
+- O usuário pode remover contas?
+- As informações de saldo mínimo devem ocorrer apenas quando a
+movimentação for confirmada realmente ou quando criada?
+**
