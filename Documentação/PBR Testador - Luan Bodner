@@ -1,0 +1,48 @@
+PBR Testador - Projeto 2
+
+Luan Bodner do Rosário
+
+Horário de Início 12:15
+
+Requisitos funcionais - Testes:
+RF1 :
+* Verificar se é possível criar contas em instituições financeiras fictícias
+* Verificar se é possível definir conta com número inválido para dada instituição
+* Testar se o domínio de "saldo inicial" e "limite mínimo" estão coerentes
+
+RF2 :
+* Analisar se os valores de movimentações são coerentes com a função desejada
+(Exemplo : Inserir -15,00 reais.)
+* Verificar se campo Data é coerente com a data de criação da conta corrente registrada
+* Testar se é possível fazer movimentação em uma conta corrente não criada anteriormente
+
+RF3 :
+* Analisar se o sistema é capaz de efetuar a movimentação dada e se emite uma confirmação visual/textual para o usuário
+
+RF4 - RF5 :
+* Verificar se é possível remover movimentação nunca criadas
+* Verificar se é possível alterar movimentações nunca criadas
+* Verificar se alteração é válida (valores, data, número da conta, instituição)
+* Analisar possibilidade de mudar instituições quanto à alteração de local
+* Testar se o banco de dados está sendo atualizado de acordo com a instituição alterada
+
+RF6 :
+* Verificar se usuário consegue acessar os dados de outros usuários
+* Verificar validade da conta corrente
+* Analisar se dados pessoais estão sendo enviados do banco para o extrato
+* Fazer verificação se o usuário é real
+
+RF7 :
+* Verificar se os valores mostrados na lista são atualizados sempre que ocorre uma
+alteração feita pelo usuário
+
+Respostas:
+1. Não para todos os requisitos do sistema, ja que alguns deles são apenas especificações de um caso maior, cobrindo partes já testadas anteriormente, ou simplesmente são funcionalidades de alerta, que não alteram o banco de dados ou estado do programa diretamente.
+
+2. Sim, eles serão capazes de mostrar se o sistema possui erros alcançáveis pelos usuários do sistema, dos mais experientes para os menos experientes.
+
+3. Não, os requisitos são bastante simples, porém não estão bem estruturados como requisitos funcionais, podendo criar buracos na implementação e nos casos de teste aqui propostos.
+
+4. Não, os casos de teste dos níveis mais baixos da implementação deveram ser capazes de analisar os erros do sistema todo.
+
+5.Na maior parte do tempo, porém a conexão com um banco "real" é extremamente incomum para este tipo de aplicação, já que é possível fazer todas as funções aqui propostas por meio da conta corrente e interface do banco.
