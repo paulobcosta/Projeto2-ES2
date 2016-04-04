@@ -1,0 +1,33 @@
+\documentclass[12pt,a4paper,final]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[portuguese]{babel}
+\author{Gerente: Paulo Batista da Costa}
+\title{Laudo - Projeto 2}
+\begin{document}
+\maketitle
+\section*{Análise do Documento}
+\begin{itemize}
+\item Os elementos e os dados foram bem definidos, exceto os dados relativos a login (ficou mal definido) -- não define como o login deve ser efetuado e critérios de segurança.
+\item As interfaces que são especificadas são consistentes, entretanto nem todas foram especificadas dando margem a contradições interpretativas
+\item Foi possível definir todos os tipos de dados.
+\item Nem todas as informações necessárias estão disponíveis. Informações como interfaces mal descritas e ações não especificadas por parte de usuário.
+\item Tudo o que está na documentação faz sentido, porém nem todas as informações necessárias estão contidas no documento.
+
+
+\item Não foi possível elaborar casos de testes para cada requisito (testes unitários, de forma particular). Entretanto os testes automaticamente abrangeram vários requisitos funcionais por vez.
+
+\item Não foi possível ter certeza se os testes gerariam as saídas esperadas (corretas) -- Isso é possível saber após a implementação.
+
+\item Não existe uma forma de interpretação que o programador possa estar se baseando de forma diferente do testador, pois os requisitos estão descritos de forma simples. Mas o domínio dos dados não está bem definido. O usuário não está devidamente definido (o que é um usuário pro sistema ) -- define apenas as ações do usuário. 
+
+\item Os testes foram elaborados para serem funcionais para todo o sistema. Os testes seriam basicamente para CRUD (verificando em suma operações de banco de dados). Assim, testes similares resultariam em resultados iguais. Mais uma vez, o defeito é a não definição do domínio de dados (falta especificação).
+
+\item A especificação fez sentido (em consideração aos conhecimentos do testador), basicamente é a simulação de um banco, um banco já tem interface para as ações desse tipo de sistema. 
+\end{itemize}
+
+
+\end{document}
