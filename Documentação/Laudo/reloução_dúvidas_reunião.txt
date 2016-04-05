@@ -1,0 +1,8 @@
+- armazenar um login, apenas uma senha seria necessário (no máximo, pois o sistema será de cunho pessoal -- seria legal, apenas colocar
+senha para acesso em contas).
+- será para apenas um usuário. (monousuário)	
+- para questões de interface, poderemos nos basear no homebank (na verdade isso pode acabar com dúvidas a respeito de dados e afins).
+- nosso sistema a priori será offline.
+- a forma de avisar o cliente de saldo mínimo é arbitrária.
+	
+ 
