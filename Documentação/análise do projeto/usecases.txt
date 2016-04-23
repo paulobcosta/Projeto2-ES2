@@ -1,175 +1,175 @@
 Cadastrar conta:
-Ator: usu·rio, sistema.
-1.Na tela principal, o sistema exibe a opÁ„o para a criaÁ„o de conta.
-2.O usu·rio clica em "criar conta".
-3.O sistema apresenta os campos a serem preenchidos pelo usu·rio.
-4.O usu·rio preenche os seguintes campos: nome da instituiÁ„o financeira, nome da conta, n˙mero da conta corrente, saldo inicial e limite mÌnimo de saldo.
-5.O usu·rio clica em "avanÁar".
-6.O sistema abre a tela de criaÁ„o de senha (uc:criar senha)
-7.Criada a senha, o usu·rio clica em "concluir".
+Ator: usu√°rio, sistema.
+1.Na tela principal, o sistema exibe a op√ß√£o para a cria√ß√£o de conta.
+2.O usu√°rio clica em "criar conta".
+3.O sistema apresenta os campos a serem preenchidos pelo usu√°rio.
+4.O usu√°rio preenche os seguintes campos: nome da institui√ß√£o financeira, nome da conta, n√∫mero da conta corrente, saldo inicial e limite m√≠nimo de saldo.
+5.O usu√°rio clica em "avan√ßar".
+6.O sistema abre a tela de cria√ß√£o de senha (uc:criar senha)
+7.Criada a senha, o usu√°rio clica em "concluir".
 8.O sistema persiste  os dados, fecha a tela e retorna para a tela inicial.
-Fluxo secund·rio:
-1.N„o libera o bot„o "avanÁar" se os campos n„o estiverem preenchidos corretamente e informa o campo com problema.
+Fluxo secund√°rio:
+1.N√£o libera o bot√£o "avan√ßar" se os campos n√£o estiverem preenchidos corretamente e informa o campo com problema.
 
 Excluir conta:
-Ator:Usu·rio, sistema.
-prÈ-requisito: ter uma conta cadastrada
-1.O usu·rio seleciona, na tela principal, a conta desejada;
-2.Ao selecionar, o sistema mostra o bot„o para "excluir"
-3.O usu·rio clica em "excluir".
-4.O sistema informa que a operaÁ„o n„o pode ser desfeita e apresenta as opÁıes "continuar com a exclus„o" e "cancelar".
-4.1. Se o usu·rio clicar em "cancelar", retorna para a tela principal.
-5.O usu·rio clica em "continuar com a exclus„o". (UC:Autentica conta)
-5.1.Se a autenticaÁ„o ocorrer normalmente, continua em #6
-5.2.Se a autenticaÁ„o falhar, volta para a tela inicial.
-6.O sistema dever· excluir a conta e todas as movimentaÁıes associadas com a conta.
+Ator:Usu√°rio, sistema.
+pr√©-requisito: ter uma conta cadastrada
+1.O usu√°rio seleciona, na tela principal, a conta desejada;
+2.Ao selecionar, o sistema mostra o bot√£o para "excluir"
+3.O usu√°rio clica em "excluir".
+4.O sistema informa que a opera√ß√£o n√£o pode ser desfeita e apresenta as op√ß√µes "continuar com a exclus√£o" e "cancelar".
+4.1. Se o usu√°rio clicar em "cancelar", retorna para a tela principal.
+5.O usu√°rio clica em "continuar com a exclus√£o". (UC:Autentica conta)
+5.1.Se a autentica√ß√£o ocorrer normalmente, continua em #6
+5.2.Se a autentica√ß√£o falhar, volta para a tela inicial.
+6.O sistema dever√° excluir a conta e todas as movimenta√ß√µes associadas com a conta.
 7.Volta para a tela inicial.
 
 Criar senha:
-Ator:Usu·rio, Sistema.
-1.O sistema mostra os campos para ediÁ„o da senha.
-2.O usu·rio preenche o campo "senha" e "repetir senha".
-3.O usu·rio clica em "continuar">
-3.1.Se as senhas n„o forem v·lidas ou compatÌveis, permanece na tela atÈ corrigir os problemas
-4.O sistema mostra o campo para a pergunta de seguranÁa;
-5.O usu·rio preenche o campo da pergunta.
+Ator:Usu√°rio, Sistema.
+1.O sistema mostra os campos para edi√ß√£o da senha.
+2.O usu√°rio preenche o campo "senha" e "repetir senha".
+3.O usu√°rio clica em "continuar">
+3.1.Se as senhas n√£o forem v√°lidas ou compat√≠veis, permanece na tela at√© corrigir os problemas
+4.O sistema mostra o campo para a pergunta de seguran√ßa;
+5.O usu√°rio preenche o campo da pergunta.
 6.O sistema habilita o campo de resposta;
-7.O usu·rio preenche o campo de resposta.
-8.O usu·rio clica em "salvar">
-9.O sistema persiste todos os dados, criando a nova senha que ser· associada com a conta.
+7.O usu√°rio preenche o campo de resposta.
+8.O usu√°rio clica em "salvar">
+9.O sistema persiste todos os dados, criando a nova senha que ser√° associada com a conta.
 Fluxo alternativo:
-A pergunta pode ser deixada em branco e, neste caso, n„o ser· salva, ea senha n„o poder· ser recuperada.
+A pergunta pode ser deixada em branco e, neste caso, n√£o ser√° salva, ea senha n√£o poder√° ser recuperada.
 
 
 Editar conta:
-Ator:Usu·rio, sistema.
-prÈ-requisito: ter uma conta cadastrada
-1.O usu·rio seleciona, na tela principal, a conta desejada;
-2.Ao selecionar, o sistema mostra o bot„o para "Editar"
-3.O usu·rio clica em "Editar".
+Ator:Usu√°rio, sistema.
+pr√©-requisito: ter uma conta cadastrada
+1.O usu√°rio seleciona, na tela principal, a conta desejada;
+2.Ao selecionar, o sistema mostra o bot√£o para "Editar"
+3.O usu√°rio clica em "Editar".
 4.O sistema autentica a conta (UC:autenticar conta)
 4.1.Se falhar, retorna para a tela inicial
-5.Os campos para ediÁ„o da conta s„o todos abertos.
-6.O usu·rio pode preencher novamente todos os que desejar.
-7.Se o usu·rio clicar em "nova senha", UC:criar senha;
-8.O usu·rio clica em "salvar">
+5.Os campos para edi√ß√£o da conta s√£o todos abertos.
+6.O usu√°rio pode preencher novamente todos os que desejar.
+7.Se o usu√°rio clicar em "nova senha", UC:criar senha;
+8.O usu√°rio clica em "salvar">
 9.O sistema persiste os dados.
 
 
 AUtenticar conta:
-Ator:Usu·rio, sistema
-PrÈ-requisito:O sistema recebe, de uma outra tela, por exemplo, a conta a autenticar.
+Ator:Usu√°rio, sistema
+Pr√©-requisito:O sistema recebe, de uma outra tela, por exemplo, a conta a autenticar.
 1.O sistema pede a senha associada com a conta.
-2.1.O usu·rio clica em "Esqueci minha senha": UC:lembrar senha
-2.1.1.Se a nova senha for cadastrada corretamente, o sistema dever· persisti-la e continuar em #5
-2.1.2.Se a nova senha n„o puder ser cadastrada, retorna para a tela principal.
-3.O usu·rio digita a senha
-4.O usu·rio clica em "ok".
-4.1.Se a senha estiver errada, informa e volta para a ela anterior, n„o autenticado.
+2.1.O usu√°rio clica em "Esqueci minha senha": UC:lembrar senha
+2.1.1.Se a nova senha for cadastrada corretamente, o sistema dever√° persisti-la e continuar em #5
+2.1.2.Se a nova senha n√£o puder ser cadastrada, retorna para a tela principal.
+3.O usu√°rio digita a senha
+4.O usu√°rio clica em "ok".
+4.1.Se a senha estiver errada, informa e volta para a ela anterior, n√£o autenticado.
 5.Retorna para a entidade que o chamou que foi autenticado com sucesso.
 
 Lembrar senha:
-Ator: Usu·rio, sistema
-PrÈ-requisito: deve ser passado para o sistema o identificador da senha
-1.O sistema mostra a pergunta de seguranÁa associada a senha.
-2.O usu·rio digita a resposta
-3.O usu·rio clica em "responder".
+Ator: Usu√°rio, sistema
+Pr√©-requisito: deve ser passado para o sistema o identificador da senha
+1.O sistema mostra a pergunta de seguran√ßa associada a senha.
+2.O usu√°rio digita a resposta
+3.O usu√°rio clica em "responder".
 3.1.Se a resposta estiver certa:
-3.1.1.O sistema exibe os campos para o usu·rio digitar e confirmar a senha.
-3.1.2.O usu·rio digita a senha nos dois campos
-3.1.3.O usu·rio clica em "Ok"
+3.1.1.O sistema exibe os campos para o usu√°rio digitar e confirmar a senha.
+3.1.2.O usu√°rio digita a senha nos dois campos
+3.1.3.O usu√°rio clica em "Ok"
 3.1.4.O sistema persiste e atualiza os dados.
-3.2.Se estiver incorreta, o sistema informa que a resposta est· incorreta. Permitem-se 3 tentativas.
+3.2.Se estiver incorreta, o sistema informa que a resposta est√° incorreta. Permitem-se 3 tentativas.
 4.O sistema informa se foi alterado com sucesso ou se falhou.
 
-Cadastrar movimentaÁ„o:
-Ator:usu·rio, sistema.
-1.O usu·rio seleciona uma conta, na tela principal.
-2.Quando uma conta for selecionada, aparecer· o bot„o "nova movimentaÁ„o".
-3.O usu·rio clica em "Nova movimentaÁ„o".
-4.O sistema exibir· os campos para a nova movimentaÁ„o:
-5.O usu·rio preenche os campos:valor, data e descriÁ„o
-6.O sistema mostra o bot„o "prÛximo" se os dados estiverem corretos
-7.O usu·rio clica em "prÛximo">
-8.O sistema autentica o usu·rio (UC:autentica conta)
-8.1.Se a autenticaÁ„o falhar, volta para a tela inicial.
-9.Se o novo saldo estiver abaixo do  limite inferior, avisa o usu·rio.
-10.O sistema mostra o bot„o "salvar" e um checkbox "movimentaÁ„o confirrmada".
-11.O usu·rio clica em "salvar".
-11.1.Se o checkbox para confirmaÁ„o foi marcado, uc:marca movimentaÁ„o #9)
+Cadastrar movimenta√ß√£o:
+Ator:usu√°rio, sistema.
+1.O usu√°rio seleciona uma conta, na tela principal.
+2.Quando uma conta for selecionada, aparecer√° o bot√£o "nova movimenta√ß√£o".
+3.O usu√°rio clica em "Nova movimenta√ß√£o".
+4.O sistema exibir√° os campos para a nova movimenta√ß√£o:
+5.O usu√°rio preenche os campos:valor, data e descri√ß√£o
+6.O sistema mostra o bot√£o "pr√≥ximo" se os dados estiverem corretos
+7.O usu√°rio clica em "pr√≥ximo">
+8.O sistema autentica o usu√°rio (UC:autentica conta)
+8.1.Se a autentica√ß√£o falhar, volta para a tela inicial.
+9.Se o novo saldo estiver abaixo do  limite inferior, avisa o usu√°rio.
+10.O sistema mostra o bot√£o "salvar" e um checkbox "movimenta√ß√£o confirrmada".
+11.O usu√°rio clica em "salvar".
+11.1.Se o checkbox para confirma√ß√£o foi marcado, uc:marca movimenta√ß√£o #9)
 12.O sistema persiste os dados e retorna para a tela inicial.
 
-Confirmar movimentaÁ„o:
-Ator:usu·rio, sistema.
-PrÈ-requisito:existirem movimentaÁıes cadastradas
-1.O usu·rio seleciona uma conta na tela principal;
-2.Aparece o bot„o "movimentaÁıes"
-3.O usu·rio clica no bot„o "movimentaÁıes"
+Confirmar movimenta√ß√£o:
+Ator:usu√°rio, sistema.
+Pr√©-requisito:existirem movimenta√ß√µes cadastradas
+1.O usu√°rio seleciona uma conta na tela principal;
+2.Aparece o bot√£o "movimenta√ß√µes"
+3.O usu√°rio clica no bot√£o "movimenta√ß√µes"
 4.O sistema autentica a conta (UC:Autenticar conta)
-4.1.Se a autenticaÁ„o falhar, volta para a tela principal.
-5.O sistema mostra uma lista das movimentaÁıes.
-6.O usu·rio seleciona uma movimentaÁ„o.
-7.Caso a movimentaÁ„o n„o esteja confirmada, aparece o bot„o "confirmar movimentaÁ„o".
-8.O usu·rio clica em "confirmar movimentaÁ„o">
-9.O sistema marca a movimentaÁ„o como confirmada e efetua as aÁıes necess·rias no banco de dados para atualizar o saldo.
-9.1.Se o limite inferior for atingido, avisa o usu·rio.
+4.1.Se a autentica√ß√£o falhar, volta para a tela principal.
+5.O sistema mostra uma lista das movimenta√ß√µes.
+6.O usu√°rio seleciona uma movimenta√ß√£o.
+7.Caso a movimenta√ß√£o n√£o esteja confirmada, aparece o bot√£o "confirmar movimenta√ß√£o".
+8.O usu√°rio clica em "confirmar movimenta√ß√£o">
+9.O sistema marca a movimenta√ß√£o como confirmada e efetua as a√ß√µes necess√°rias no banco de dados para atualizar o saldo.
+9.1.Se o limite inferior for atingido, avisa o usu√°rio.
 
-Editar movimentaÁ„o:
-Ator:usu·rio, sistema.
-PrÈ-requisito:existirem movimentaÁıes cadastradas
-1.O usu·rio seleciona uma conta na tela principal;
-2.Aparece o bot„o "movimentaÁıes"
-3.O usu·rio clica no bot„o "movimentaÁıes"
+Editar movimenta√ß√£o:
+Ator:usu√°rio, sistema.
+Pr√©-requisito:existirem movimenta√ß√µes cadastradas
+1.O usu√°rio seleciona uma conta na tela principal;
+2.Aparece o bot√£o "movimenta√ß√µes"
+3.O usu√°rio clica no bot√£o "movimenta√ß√µes"
 4.O sistema autentica a conta (UC:Autenticar conta)
-4.1.Se a autenticaÁ„o falhar, volta para a tela principal.
-5.O sistema mostra uma lista das movimentaÁıes.
-6.O usu·rio seleciona uma movimentaÁ„o.
-7.O usu·rio clica em "editar".
-8.Os campos de movimentaÁ„o s„o abertos para alterar qualquer dado.
-9.O usu·rio clica em "salvar".
-10.Caso seja marcada como 'realizada', devem ser feitas as alteraÁıes no banco.
+4.1.Se a autentica√ß√£o falhar, volta para a tela principal.
+5.O sistema mostra uma lista das movimenta√ß√µes.
+6.O usu√°rio seleciona uma movimenta√ß√£o.
+7.O usu√°rio clica em "editar".
+8.Os campos de movimenta√ß√£o s√£o abertos para alterar qualquer dado.
+9.O usu√°rio clica em "salvar".
+10.Caso seja marcada como 'realizada', devem ser feitas as altera√ß√µes no banco.
 
-Remover movimentaÁ„o:
-Ator:usu·rio, sistema.
-PrÈ-requisito:existirem movimentaÁıes cadastradas
-1.O usu·rio seleciona uma conta na tela principal;
-2.Aparece o bot„o "movimentaÁıes"
-3.O usu·rio clica no bot„o "movimentaÁıes"
+Remover movimenta√ß√£o:
+Ator:usu√°rio, sistema.
+Pr√©-requisito:existirem movimenta√ß√µes cadastradas
+1.O usu√°rio seleciona uma conta na tela principal;
+2.Aparece o bot√£o "movimenta√ß√µes"
+3.O usu√°rio clica no bot√£o "movimenta√ß√µes"
 4.O sistema autentica a conta (UC:Autenticar conta)
-4.1.Se a autenticaÁ„o falhar, volta para a tela principal.
-5.O sistema mostra uma lista das movimentaÁıes.
-6.O usu·rio seleciona uma movimentaÁ„o.
-7.Aparece o bot„o "excluir".
-9.O usu·rio clica em "excluir".
-10.O sistema informa que a operaÁ„o È irreversÌvel.
-10.1.Se o usu·rio clicar em "n„o excluir" volta para a tela principal.
-11.O usu·rio clica em "excluir">
-12.A movimentaÁ„o È excluÌda.
-12.1.Se estiver marcada como "realizada",as alteraÁıes s„o desfeitas e o usu·rio È informado caso o saldo fique abaixo do mÌnimo.
-13.O sistema persiste as informaÁıes e retorna para a tela principal.
+4.1.Se a autentica√ß√£o falhar, volta para a tela principal.
+5.O sistema mostra uma lista das movimenta√ß√µes.
+6.O usu√°rio seleciona uma movimenta√ß√£o.
+7.Aparece o bot√£o "excluir".
+9.O usu√°rio clica em "excluir".
+10.O sistema informa que a opera√ß√£o √© irrevers√≠vel.
+10.1.Se o usu√°rio clicar em "n√£o excluir" volta para a tela principal.
+11.O usu√°rio clica em "excluir">
+12.A movimenta√ß√£o √© exclu√≠da.
+12.1.Se estiver marcada como "realizada",as altera√ß√µes s√£o desfeitas e o usu√°rio √© informado caso o saldo fique abaixo do m√≠nimo.
+13.O sistema persiste as informa√ß√µes e retorna para a tela principal.
 
-Consultar estrato:
-Ator:usu·rio, sistema.
-PrÈ-requisito:existirem contas cadastradas
-1.O usu·rio seleciona uma conta na tela principal;
-2.Aparece o bot„o "estrato"
-3.O usu·rio clica em "estrato"
+Consultar extrato:
+Ator:usu√°rio, sistema.
+Pr√©-requisito:existirem contas cadastradas
+1.O usu√°rio seleciona uma conta na tela principal;
+2.Aparece o bot√£o "estrato"
+3.O usu√°rio clica em "estrato"
 4.O sistema autentica a conta (UC:autenticar conta)
-4.1.Se a autenticaÁ„o falhar, volta para a tela principal.
-5.O sistema exibe dois campos, para indicar as datas e um bot„o para visualizar
-6.O usu·rio clica em "visualizar">
-6.1.Se as datas forem inv·lidas, informa o usu·rio e espera correÁ„o
-7.O sistema lista todas as movimentaÁıes neste intervalo, bem como o saldo atual e limite mÌnimo de saldo da conta.
-8.O usu·rio clica em "ok" e a tela È fechada.
-* Na lista, devem constar data, descriÁ„o e valor, fazendo a distinÁ„o entre despesa e receita
+4.1.Se a autentica√ß√£o falhar, volta para a tela principal.
+5.O sistema exibe dois campos, para indicar as datas e um bot√£o para visualizar
+6.O usu√°rio clica em "visualizar">
+6.1.Se as datas forem inv√°lidas, informa o usu√°rio e espera corre√ß√£o
+7.O sistema lista todas as movimenta√ß√µes neste intervalo, bem como o saldo atual e limite m√≠nimo de saldo da conta.
+8.O usu√°rio clica em "ok" e a tela √© fechada.
+* Na lista, devem constar data, descri√ß√£o e valor, fazendo a distin√ß√£o entre despesa e receita
 
 Consultar saldo:
-Ator:usu·rio, sistema.
-PrÈ-requisito:existirem contas cadastradas
-1.O usu·rio seleciona uma conta na tela principal;
-2.Aparece o bot„o "saldo"
-3.O usu·rio clica em "saldo"
+Ator:usu√°rio, sistema.
+Pr√©-requisito:existirem contas cadastradas
+1.O usu√°rio seleciona uma conta na tela principal;
+2.Aparece o bot√£o "saldo"
+3.O usu√°rio clica em "saldo"
 4.O sistema autentica a conta (UC:autenticar conta)
-4.1.Se a autenticaÁ„o falhar, volta para a tela principal.
-5.O sistema mostra o saldo atual bem como o saldo mÌnimo da conta.
-6.O usu·rio clica em "ok" e volta para a tela inicial.
+4.1.Se a autentica√ß√£o falhar, volta para a tela principal.
+5.O sistema mostra o saldo atual bem como o saldo m√≠nimo da conta.
+6.O usu√°rio clica em "ok" e volta para a tela inicial.
