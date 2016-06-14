@@ -1,0 +1,129 @@
+	\documentclass[12pt,a4paper]{article}
+	\usepackage[utf8]{inputenc}
+	\usepackage[portuguese]{babel}
+	\usepackage[T1]{fontenc}
+	\usepackage{amsmath}
+	\usepackage{amsfonts}
+	\usepackage{amssymb}
+	\usepackage{graphicx}
+	\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+	\author{Paulo Batista da Costa}
+	\title{}
+	
+	\begin{document}
+		
+	        \begin{titlepage}
+	        \LARGE
+	        	\begin{center}
+	        	\vspace{5cm} 
+	        	\textbf{Universidade Tecnológica Federal do Paraná \\ \vspace{1.8cm}}
+	        	\includegraphics[scale=0.35]{logoutfpr.jpg} \\ \vspace{1.8cm}
+	        	\textit{Engenharia de Software II} \vspace{2cm} \\
+	        	Paulo Batista da Costa \\ 1509764 \vspace{2cm} \\ 
+	        	PROJETO 2 - ESTIMATIVA DE TEMPO PARA DESENVOLVIMENTO\vspace{2cm} \\
+	        	Departamento de Ciência da Computação (DACOM) 
+	        	
+	        	\end{center}
+	        \end{titlepage}	
+		
+			\tableofcontents
+			\newpage
+			\section{Da Natureza Deste Documento}
+			\paragraph{} Este documento é referente à estimativa de tempo para o desenvolvimento do projeto de software. Este consiste num sistema de gerenciamento de finanças pessoais, sendo necessáriamente \textit{offline} e monousuário. Aqui o foco é definir um parâmetro de tempo esperado para a elaboração do projeto.
+	
+	\paragraph{} Para tal, foi utilizado a técnica \textbf{EAP} (Estrutura Analítica de Projeto, do inglês \textit{Work breakdown structure}) e na fórmula \textbf{PERT} (\textit{Program Evaluation and Review Technique}). A seguir serão apresentadas as subdivisões do trabalho em etapas. Estas são baseadas na leitura feita a partir dos requisitos funcionais levantados através da documentação do projeto. 
+	\section{Escopo do Projeto}
+	O projeto foi analisado e possui seu desenvolvimento dividido nas seguintes etapas:
+	\begin{itemize}			
+		\item Etapa 1: Diagramação de casos de uso
+		\item Etapa 2: Diagramação de classes
+		\item Etapa 3: Implementação de classes
+		\item Etapa 4: Implementação de operações de Banco de Dados
+		\item Etapa 5: Implementação de Interface gráfica
+		\item Etapa 6: Realização de testes
+		\item Etapa 7: Correções
+			\item Etapa 1: Diagramação de casos de uso
+		\item Etapa 2: Diagramação de classes
+		\item Etapa 3: Implementação de classes
+		\item Etapa 4: Implementação de operações de Banco de Dados
+		\item Etapa 5: Implementação de Interface gráfica
+		\item Etapa 6: Realização de testes
+		\item Etapa 7: Correções
+		
+	\end{itemize}
+	
+	\section{Estimativa de Tempo por Etapa}
+	Verifica-se nesta seção a metodologia de tempo empregada e sua respectiva divisão em etapas.
+		\subsection{Descrição Metodológica}
+		\paragraph{} A estimativa foi realizada utilizando o cálculo \textbf{PERT}. Este é tido como:
+	$TE = \frac{P + 4M + O}{6}$, onde $(TE)$ é o tempo esperado, $(P)$ é o tempo pessimista, $M$ é o mais provável e $(O)$ o tempo Otimista.
+	
+	\paragraph{} O tempo pessimista será aquele que denotará maior intervalo de tempo. Este considera que ocasionalidades podem influenciar no baixo rendimento do integrante da equipe, o que torna o desenvolvimento mais lento e menos eficiente. Por sua vez, o tempo otimista propõem que o desenvolvimento será favorecido e os integrantes trabalharão sem interrupções e fatores que causem lentidão ou baixa produtividade. 
+	
+	\paragraph{} Já o tempo mais comum, contará uma estimativa que tenta se aproximar do real, de acordo com o que se sabe a respeito dos integrantes da equipe e o ritmo de desenvolvimento normal de cada um da equipe.
+	
+	\subsection{Estimativas}	
+	
+	\begin{itemize}
+		\item Etapa 1: Diagramação de casos de uso
+		\begin{itemize}
+			\item Otimista: 2 horas
+			\item Pessimista: 5 horas
+			\item Mais provável: 3 horas
+			\item Tempo esperado: 3,16 horas
+		\end{itemize}
+		\item Etapa 2: Diagramação de classes
+		
+		\begin{itemize}
+			\item Otimista: 3 horas
+			\item Pessimista: 8 horas
+			\item Mais provável:4 horas
+			\item Tempo esperado: 4,5 horas
+		\end{itemize}
+			\item Etapa 3: Implementação de classes
+		\begin{itemize}
+				\item Otimista: 8 horas
+				\item Pessimista: 25 horas
+				\item Mais provável: 15 horas
+				\item Tempo Esperado: 15,5 horas
+				
+		\end{itemize}
+	 \item Etapa 4: Implementação de operações de Banco de Dados
+			\begin{itemize}
+				\item Otimista: 5 horas
+				\item Pessimista: 10 horas
+				\item Mais provável: 7 horas
+				\item Tempo esperado: 7,17 horas
+			\end{itemize}
+			\item Etapa 5: Implementação de Interface gráfica
+			\begin{itemize}
+				\item Otimista: 7 horas
+				\item Pessimista: 20 horas
+				\item Mais provável: 14 horas
+				\item Tempo esperado: 13,83 horas
+			\end{itemize}
+			\item Etapa 6: Realização de testes
+			\begin{itemize}
+				\item Otimista: 6 horas
+				\item Pessimista: 10 horas
+				\item Mais provável: 4 horas
+				\item Tempo esperado: 5,3 horas
+			\end{itemize}
+			\item Etapa 7: Correções
+			\begin{itemize}
+				\item Otimista: 4 horas
+				\item Pessimista: 15 horas
+				\item Mais esperado: 8 horas
+				\item Tempo esperado: 8,5 horas
+			\end{itemize}
+	\end{itemize}
+	
+	\section{Tempo Total Esperado: Segundo a previsão}
+	
+	\paragraph{} Acima foi exposto a estimativa detalhada para cada possível divisão de etapa de desenvolvimento do projeto. Assim, é possível estimar o tempo total somando o tempo esperado de todas as etapas. Desta forma, o tempo total estimado é 57,96 horas (Aproximadamente 58 horas).
+	
+	\section{Justificativa: justificando a metologia empregada para previsões}	
+	
+	\paragraph{} Esta metodologia foi empregada na realização da estimativa de tempo de trabalho, pois ela depende - em sua maioria conceitual - do conhecimento do estimador sobre o projeto a ser trabalhado e sobre os membros de sua equipe. Além disso, o tamanho do projeto (complexidade) também é considerada.
+			
+		\end{document}
