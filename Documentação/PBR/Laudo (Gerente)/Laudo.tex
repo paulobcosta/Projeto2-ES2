@@ -1,83 +1,77 @@
-\documentclass[12pt,a4paper,final]{report}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage[portuguese]{babel}
-\author{Gerente: Paulo Batista da Costa}
-\title{Laudo - Projeto 2}
-\begin{document}
-\maketitle
-\section*{Introdução}
-\begin{quotation}
-	Este documento remete ao laudo realizado através da análise do processo de PBR que visou identificar possíveis defeitos na documentação fornecida. Este documento é referente ao projeto 2. Aqui é possível verificar defeitos e considerações gerais, bem como o controle de horas consumidas e as suas respectivas estimativas.
-\end{quotation}
-\section*{Análise da Documentação - resultado do PBR}
-\subsection*{Defeitos}
-\begin{enumerate}
-	\item Os elementos e os dados foram bem definidos, exceto os dados relativos a login (ficou mal definido) -- não define como o login deve ser efetuado e critérios de segurança.
-	\item As interfaces que são especificadas são consistentes, entretanto há itens não especificados que que remete a uma margem para contradições interpretativas.
-	\item Nem todas as informações necessárias estão disponíveis. Informações como interfaces mal descritas e ações não especificadas por parte de usuário.
-	\item Tudo o que está na documentação faz sentido, porém nem todas as informações necessárias estão contidas no documento.
-	\item Não foi possível elaborar casos de testes para cada requisito (testes unitários, de forma particular). Entretanto os testes automaticamente abrangeram vários requisitos funcionais por vez.
-	\item Não foi possível ter certeza se os testes gerariam as saídas esperadas (corretas) -- Isso é possível saber após a implementação.
-\end{enumerate}
-\subsection*{Considerações gerais}
-\begin{enumerate}
-
-
-\item Foi possível definir todos os tipos de dados.
-
-
-
-
-
-
-
-
-\item Não existe uma forma de interpretação que o programador possa estar se baseando de forma diferente do testador, pois os requisitos estão descritos de forma simples. Mas o domínio dos dados não está bem definido. O usuário não está devidamente definido (o que é um usuário pro sistema ) -- define apenas as ações do usuário. 
-
-\item Os testes foram elaborados para serem funcionais para todo o sistema. Os testes seriam basicamente para CRUD (verificando em suma operações de banco de dados). Assim, testes similares resultariam em resultados iguais. Mais uma vez, o defeito é a não definição do domínio de dados (falta especificação).
-
-\item A especificação fez sentido (em consideração aos conhecimentos do testador), basicamente é a simulação de um banco, um banco já tem interface para as ações desse tipo de sistema. 
-\end{enumerate}
-\newpage
-\section*{Relatório - Controle de Esforço}
-\vspace{0.75cm}
-\begin{table*}[ht]
-	 \centering
-\begin{tabular}{||c|c|c||}\hline
-	\textbf{Visão} & \textbf{Tempo Estimado} & \textbf{Tempo Consumido} \\ \hline
-	Projetista(1) & 20 Horas & 4 Horas e 20 min \\ \hline
-	Testador(2) & 8 Horas & 1 Hora e 15 min \\ \hline
-	Usuário(3) & 4 Horas & 55 min \\ \hline
-\end{tabular} 
-\caption{Tabela de Controle de esforço}
-\end{table*}
-\vspace{0.75cm}
-\begin{enumerate}
+	\documentclass[12pt,a4paper]{article}
+	\usepackage[utf8]{inputenc}
+	\usepackage[portuguese]{babel}
+	\usepackage[T1]{fontenc}
+	\usepackage{amsmath}
+	\usepackage{amsfonts}
+	\usepackage{amssymb}
+	\usepackage{graphicx}
+	\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+	\author{Paulo Batista da Costa}
+	\title{Laudo PBR refente ao projeto II }
 	
-\item Projetista: 
-
+	\begin{document}
 	
-	\textbullet(29/03/2016) -- 13h e 50min  - 15h e 30min \\
-	\textbullet(30/03/2016) -- 15h e 50min  - 17h e 30min \\
-	\textbullet(31/03/2016) -- 9h e 30min  - 10h e 30min 
-
-  
-
-\item Testador:
-
-	\textbullet(31/03/2016) -- 12h e 15min - 13h e 30min
-
-\item Usuário: 
-
-	\textbullet(06/04/2016) -- 0h e 30min - 1h e 25min
- 
-\end{enumerate}
-\vspace{0.75cm}
-\begin{quotation}
-	\checkmark É notável que as estimativas excederam os tempos que de fato foram consumidos pelos membros da equipe. Tal erro é justificado pela inexperiência relativa à prática do PBR.
-\end{quotation}
-\end{document}
+        \begin{titlepage}
+        \LARGE
+        	\begin{center}
+        	\vspace{5cm} 
+        	\textbf{Universidade Tecnológica Federal do Paraná \\ \vspace{1.8cm}}
+        	\includegraphics[scale=0.35]{logoutfpr.jpg} \\ \vspace{1.8cm}
+        	\textit{Engenharia de Software II} \vspace{2cm} \\
+        	Paulo Batista da Costa \\ 1509764 \vspace{2cm} \\ 
+        	PROJETO 2 - LAUDO PBR \vspace{2cm} \\
+        	Departamento de Ciência da Computação (DACOM) 
+        	
+        	\end{center}
+        \end{titlepage}	
+	
+		\tableofcontents
+		\newpage
+		\section{Introdução} 
+		\paragraph{} 
+		Este documento é referente ao laudo realizado através da análise do processo de \textbf{PBR} que visou identificar possíveis defeitos na documentação fornecida. Este é específico ao laudo gerencial do projeto 2. Aqui é possível verificar defeitos e considerações gerais, bem como o controle de horas consumidas e as suas respectivas estimativas.
+		
+		\section{Resultado}
+		\subsection{Análise Documental: defeitos encontrados}
+		\begin{enumerate}
+		\item Os elementos e os dados foram bem definidos, exceto os dados relativos a login (mal definido na documentação) -- não define como o login deve ser efetuado e critérios de segurança.
+		\item As interfaces especificadas são consistentes, entretanto há elementos não especificados promovem margens para contradições interpretativas.
+		\item Nem todas as informações necessárias estão disponíveis, há algumas interfaces mal descritas e ações não especificadas por parte de usuário.
+		\item Tudo o que está na documentação faz sentido, porém nem todas as informações necessárias estão contidas na especificação.
+		\item Não foi possível elaborar casos de testes para cada requisito (testes unitários, de forma particular). Entretanto os testes automaticamente abrangeram vários requisitos funcionais concomitantemente.
+		\item Não foi possível obter certeza se os testes geraram as saídas esperadas (corretas) -- Isso é possível saber após a implementação.
+	\end{enumerate}
+	\subsection{Condições Gerais}
+		\begin{enumerate}
+		\item Foi possível definir todos os tipos de dados.
+	
+	
+	
+	
+	
+	
+	
+	
+	\item Não existe uma forma de interpretação que o programador possa estar se baseando de forma diferente do testador, pois os requisitos estão descritos de forma simples. Mas o domínio dos dados não está bem definido. O usuário não está devidamente definido (o que é um usuário pro sistema ) -- define apenas as ações do usuário. 
+	
+	\item Os testes foram elaborados para serem funcionais para todo o sistema. Os testes seriam basicamente para CRUD (verificando em suma operações de banco de dados). Assim, testes similares resultariam em resultados iguais. Mais uma vez, o defeito é a não definição do domínio de dados (falta especificação).
+	
+	\item A especificação fez sentido (em consideração aos conhecimentos do testador), basicamente é a simulação de um banco, um banco já tem interface para as ações desse tipo de sistema. 
+	\end{enumerate}
+		\newpage
+	\section{Controle de esforço}
+	\paragraph{} Nesta seção há a explicitação a respeito do tempo consumido pelos integrantes do projeto na elaboração do \textbf{PBR}. O tempo foi fornecido por cada participante, cabendo à gerência a confiabilidade nos membros da equipe quanto a veracidade da informação relativa ao esforço consumido na etapa de busca de defeitos via \textbf{PBF}.
+	\vspace{0.45cm}
+		\begin{table*}[ht]
+		 \centering
+	\begin{tabular}{||c|c|c||}\hline
+		\textbf{Visão} & \textbf{Tempo Estimado} & \textbf{Tempo Consumido} \\ \hline
+		Projetista(1) & 20 Horas & 4 Horas e 20 min \\ \hline
+		Testador(2) & 8 Horas & 1 Hora e 15 min \\ \hline
+		Usuário(3) & 4 Horas & 55 min \\ \hline
+	\end{tabular} 
+	\caption{Tabela de Controle de esforço}
+	\end{table*}
+		
+	\end{document}
