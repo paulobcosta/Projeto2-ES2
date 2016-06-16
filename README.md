@@ -23,13 +23,20 @@ O canal de comunicação entre os representantes deste projeto é o _email_. Ist
 Além disso, Há o controle de tarefas através do **waffle.io**. Esta é uma ferramenta integrada ao _github_ que transforma _issues_ em cartões que são manipulados de forma livre pelos representantes do projeto. Isto é similar ao _trello_, porém com a sua organização automatizada por recursos computacionais providos pelo sistema (Uma espécie de Kambam).
 
 Complementando, as _issues_ ganham assim estados que são manipuláveis no waffle.io através de _labels_:
-1. _Backlog_: A _issue_ foi descrita pelo gerente, entretanto não há subsídios para que o responsável execute a tarefa
-2. _Ready_: A _issue_ possui subsídio para ser trabalhada, assim o **gerente** a moveu a fim de que o responsável a execute
-3. _In Progess_: A _issue_ está sendo foco de trabalho e está em andamento, o cartão foi movido pelo responsável da tarefa.
-4. _Done_: Aqui especificamente, quem moverá o cartão/_issue_ será o gerente, assim que o responsável notificar via comentário de _issue_ que a tarefa está executada (passará por inspeção do gerente e enviada à pilha de _issues_ executadas).
+
+
+1.  _Backlog_: A _issue_ foi descrita pelo gerente, entretanto não há subsídios para que o responsável execute a tarefa
+2.  _Ready_: A _issue_ possui subsídio para ser trabalhada, assim o **gerente** a moveu a fim de que o responsável a execute
+3.  _In Progess_: A _issue_ está sendo foco de trabalho e está em andamento, o cartão foi movido pelo responsável da tarefa.
+4.  _Done_: Aqui especificamente, quem moverá o cartão/_issue_ será o gerente, assim que o responsável notificar via comentário de _issue_ que a tarefa está executada (passará por inspeção do gerente e enviada à pilha de _issues_ executadas).
+
+
+Caso queira conferir como anda o processo de desenvolvimento, disponibilizamos aqui uma _badge_ que o levará ao nosso quadro _Kanbam_ (É só clicar no ícone para ser redirecionado): [![Stories in Ready](https://badge.waffle.io/paulobcosta/Projeto2-ES2.png?label=ready&title=Ready)](https://waffle.io/paulobcosta/Projeto2-ES2)
 
 ### Estrutura de Repositório
 Este repositório está organizado utilizando o critério de hierarquia
+
+### Definição do Ferramental do Projeto
 ## Grupo de Desenvolvimento
 1. **Gerente**: Paulo Batista da Costa
 2. **Projetista**: Felipe Veiga Ramos
@@ -39,6 +46,6 @@ Este repositório está organizado utilizando o critério de hierarquia
 
 
 
-[![Stories in Ready](https://badge.waffle.io/paulobcosta/Projeto2-ES2.png?label=ready&title=Ready)](https://waffle.io/paulobcosta/Projeto2-ES2)
+
 # Projeto2-ES2
 Projeto 2 de Engenharia de Software - UTFPR 2016 / 1
