@@ -1,0 +1,175 @@
+Cadastrar conta:
+Ator: usuário, sistema.
+1.Na tela principal, o sistema exibe a opção para a criação de conta.
+2.O usuário clica em "criar conta".
+3.O sistema apresenta os campos a serem preenchidos pelo usuário.
+4.O usuário preenche os seguintes campos: nome da instituição financeira, nome da conta, número da conta corrente, saldo inicial e limite mínimo de saldo.
+5.O usuário clica em "avançar".
+6.O sistema abre a tela de criação de senha (uc:criar senha)
+7.Criada a senha, o usuário clica em "concluir".
+8.O sistema persiste  os dados, fecha a tela e retorna para a tela inicial.
+Fluxo secundário:
+1.Não libera o botão "avançar" se os campos não estiverem preenchidos corretamente e informa o campo com problema.
+
+Excluir conta:
+Ator:Usuário, sistema.
+pré-requisito: ter uma conta cadastrada
+1.O usuário seleciona, na tela principal, a conta desejada;
+2.Ao selecionar, o sistema mostra o botão para "excluir"
+3.O usuário clica em "excluir".
+4.O sistema informa que a operação não pode ser desfeita e apresenta as opções "continuar com a exclusão" e "cancelar".
+4.1. Se o usuário clicar em "cancelar", retorna para a tela principal.
+5.O usuário clica em "continuar com a exclusão". (UC:Autentica conta)
+5.1.Se a autenticação ocorrer normalmente, continua em #6
+5.2.Se a autenticação falhar, volta para a tela inicial.
+6.O sistema deverá excluir a conta e todas as movimentações associadas com a conta.
+7.Volta para a tela inicial.
+
+Criar senha:
+Ator:Usuário, Sistema.
+1.O sistema mostra os campos para edição da senha.
+2.O usuário preenche o campo "senha" e "repetir senha".
+3.O usuário clica em "continuar">
+3.1.Se as senhas não forem válidas ou compatíveis, permanece na tela até corrigir os problemas
+4.O sistema mostra o campo para a pergunta de segurança;
+5.O usuário preenche o campo da pergunta.
+6.O sistema habilita o campo de resposta;
+7.O usuário preenche o campo de resposta.
+8.O usuário clica em "salvar">
+9.O sistema persiste todos os dados, criando a nova senha que será associada com a conta.
+Fluxo alternativo:
+A pergunta pode ser deixada em branco e, neste caso, não será salva, ea senha não poderá ser recuperada.
+
+
+Editar conta:
+Ator:Usuário, sistema.
+pré-requisito: ter uma conta cadastrada
+1.O usuário seleciona, na tela principal, a conta desejada;
+2.Ao selecionar, o sistema mostra o botão para "Editar"
+3.O usuário clica em "Editar".
+4.O sistema autentica a conta (UC:autenticar conta)
+4.1.Se falhar, retorna para a tela inicial
+5.Os campos para edição da conta são todos abertos.
+6.O usuário pode preencher novamente todos os que desejar.
+7.Se o usuário clicar em "nova senha", UC:criar senha;
+8.O usuário clica em "salvar">
+9.O sistema persiste os dados.
+
+
+AUtenticar conta:
+Ator:Usuário, sistema
+Pré-requisito:O sistema recebe, de uma outra tela, por exemplo, a conta a autenticar.
+1.O sistema pede a senha associada com a conta.
+2.1.O usuário clica em "Esqueci minha senha": UC:lembrar senha
+2.1.1.Se a nova senha for cadastrada corretamente, o sistema deverá persisti-la e continuar em #5
+2.1.2.Se a nova senha não puder ser cadastrada, retorna para a tela principal.
+3.O usuário digita a senha
+4.O usuário clica em "ok".
+4.1.Se a senha estiver errada, informa e volta para a ela anterior, não autenticado.
+5.Retorna para a entidade que o chamou que foi autenticado com sucesso.
+
+Lembrar senha:
+Ator: Usuário, sistema
+Pré-requisito: deve ser passado para o sistema o identificador da senha
+1.O sistema mostra a pergunta de segurança associada a senha.
+2.O usuário digita a resposta
+3.O usuário clica em "responder".
+3.1.Se a resposta estiver certa:
+3.1.1.O sistema exibe os campos para o usuário digitar e confirmar a senha.
+3.1.2.O usuário digita a senha nos dois campos
+3.1.3.O usuário clica em "Ok"
+3.1.4.O sistema persiste e atualiza os dados.
+3.2.Se estiver incorreta, o sistema informa que a resposta está incorreta. Permitem-se 3 tentativas.
+4.O sistema informa se foi alterado com sucesso ou se falhou.
+
+Cadastrar movimentação:
+Ator:usuário, sistema.
+1.O usuário seleciona uma conta, na tela principal.
+2.Quando uma conta for selecionada, aparecerá o botão "nova movimentação".
+3.O usuário clica em "Nova movimentação".
+4.O sistema exibirá os campos para a nova movimentação:
+5.O usuário preenche os campos:valor, data e descrição
+6.O sistema mostra o botão "próximo" se os dados estiverem corretos
+7.O usuário clica em "próximo">
+8.O sistema autentica o usuário (UC:autentica conta)
+8.1.Se a autenticação falhar, volta para a tela inicial.
+9.Se o novo saldo estiver abaixo do  limite inferior, avisa o usuário.
+10.O sistema mostra o botão "salvar" e um checkbox "movimentação confirrmada".
+11.O usuário clica em "salvar".
+11.1.Se o checkbox para confirmação foi marcado, uc:marca movimentação #9)
+12.O sistema persiste os dados e retorna para a tela inicial.
+
+Confirmar movimentação:
+Ator:usuário, sistema.
+Pré-requisito:existirem movimentações cadastradas
+1.O usuário seleciona uma conta na tela principal;
+2.Aparece o botão "movimentações"
+3.O usuário clica no botão "movimentações"
+4.O sistema autentica a conta (UC:Autenticar conta)
+4.1.Se a autenticação falhar, volta para a tela principal.
+5.O sistema mostra uma lista das movimentações.
+6.O usuário seleciona uma movimentação.
+7.Caso a movimentação não esteja confirmada, aparece o botão "confirmar movimentação".
+8.O usuário clica em "confirmar movimentação">
+9.O sistema marca a movimentação como confirmada e efetua as ações necessárias no banco de dados para atualizar o saldo.
+9.1.Se o limite inferior for atingido, avisa o usuário.
+
+Editar movimentação:
+Ator:usuário, sistema.
+Pré-requisito:existirem movimentações cadastradas
+1.O usuário seleciona uma conta na tela principal;
+2.Aparece o botão "movimentações"
+3.O usuário clica no botão "movimentações"
+4.O sistema autentica a conta (UC:Autenticar conta)
+4.1.Se a autenticação falhar, volta para a tela principal.
+5.O sistema mostra uma lista das movimentações.
+6.O usuário seleciona uma movimentação.
+7.O usuário clica em "editar".
+8.Os campos de movimentação são abertos para alterar qualquer dado.
+9.O usuário clica em "salvar".
+10.Caso seja marcada como 'realizada', devem ser feitas as alterações no banco.
+
+Remover movimentação:
+Ator:usuário, sistema.
+Pré-requisito:existirem movimentações cadastradas
+1.O usuário seleciona uma conta na tela principal;
+2.Aparece o botão "movimentações"
+3.O usuário clica no botão "movimentações"
+4.O sistema autentica a conta (UC:Autenticar conta)
+4.1.Se a autenticação falhar, volta para a tela principal.
+5.O sistema mostra uma lista das movimentações.
+6.O usuário seleciona uma movimentação.
+7.Aparece o botão "excluir".
+9.O usuário clica em "excluir".
+10.O sistema informa que a operação é irreversível.
+10.1.Se o usuário clicar em "não excluir" volta para a tela principal.
+11.O usuário clica em "excluir">
+12.A movimentação é excluída.
+12.1.Se estiver marcada como "realizada",as alterações são desfeitas e o usuário é informado caso o saldo fique abaixo do mínimo.
+13.O sistema persiste as informações e retorna para a tela principal.
+
+Consultar extrato:
+Ator:usuário, sistema.
+Pré-requisito:existirem contas cadastradas
+1.O usuário seleciona uma conta na tela principal;
+2.Aparece o botão "estrato"
+3.O usuário clica em "estrato"
+4.O sistema autentica a conta (UC:autenticar conta)
+4.1.Se a autenticação falhar, volta para a tela principal.
+5.O sistema exibe dois campos, para indicar as datas e um botão para visualizar
+6.O usuário clica em "visualizar">
+6.1.Se as datas forem inválidas, informa o usuário e espera correção
+7.O sistema lista todas as movimentações neste intervalo, bem como o saldo atual e limite mínimo de saldo da conta.
+8.O usuário clica em "ok" e a tela é fechada.
+* Na lista, devem constar data, descrição e valor, fazendo a distinção entre despesa e receita
+
+Consultar saldo:
+Ator:usuário, sistema.
+Pré-requisito:existirem contas cadastradas
+1.O usuário seleciona uma conta na tela principal;
+2.Aparece o botão "saldo"
+3.O usuário clica em "saldo"
+4.O sistema autentica a conta (UC:autenticar conta)
+4.1.Se a autenticação falhar, volta para a tela principal.
+5.O sistema mostra o saldo atual bem como o saldo mínimo da conta.
+6.O usuário clica em "ok" e volta para a tela inicial.
