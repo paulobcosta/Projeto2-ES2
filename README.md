@@ -48,6 +48,7 @@ Isso tem o objetivo de facilitar a compreensão do conteúdo aqui disponível
 
 ### Definição do Ferramental do Projeto
 
+- Utilização do ArgoUML para desenvolvimento de Diagramas
 - Utilização do _github_ para armazenagem e versionamento de _software_
 - Utilização do _waffle.io_ para gerenciamento de cartões em _KANBAM_
 - Utilização do Eclipse como IDE de desenvolviment
