@@ -1,6 +1,8 @@
 
 # Projeto II - Engenharia de Software II
 
+## Universidade Tecnológica Federal do Paraná 2016/1
+
 Este projeto é referente ao trabalho executado na disciplina de Engenharia de Software II com propósitos avaliativos.
 
 
@@ -31,12 +33,42 @@ Complementando, as _issues_ ganham assim estados que são manipuláveis no waffl
 4.  _Done_: Aqui especificamente, quem moverá o cartão/_issue_ será o gerente, assim que o responsável notificar via comentário de _issue_ que a tarefa está executada (passará por inspeção do gerente e enviada à pilha de _issues_ executadas).
 
 
-Caso queira conferir como anda o processo de desenvolvimento, disponibilizamos aqui uma _badge_ que o levará ao nosso quadro _Kanbam_ (É só clicar no ícone para ser redirecionado): [![Stories in Ready](https://badge.waffle.io/paulobcosta/Projeto2-ES2.png?label=ready&title=Ready)](https://waffle.io/paulobcosta/Projeto2-ES2)
+Caso queira conferir o andamento do processo de desenvolvimento, disponibilizamos aqui uma _badge_ que o levará ao nosso quadro _Kanbam_ (É só clicar no ícone para ser redirecionado): [![Stories in Ready](https://badge.waffle.io/paulobcosta/Projeto2-ES2.png?label=ready&title=Ready)](https://waffle.io/paulobcosta/Projeto2-ES2)
 
 ### Estrutura de Repositório
-Este repositório está organizado utilizando o critério de hierarquia
+Este repositório está organizado utilizando o critério de hierarquia: 
+
+- **Documentação**: estrutuda do repositório para documentações do projeto (Cada pasta está rotulada por seu conteúdo) 
+- **Software**: estrutura do repositório para implementação de software
+
+
+Isso tem o objetivo de facilitar a compreensão do conteúdo aqui disponível
 
 ### Definição do Ferramental do Projeto
+
+- Utilização do _github_ para armazenagem e versionamento de _software_
+- Utilização do _waffle.io_ para gerenciamento de cartões em _KANBAM_
+- Utilização do Eclipse como IDE de desenvolviment
+- Linguagem Java para desenvolvimento de código
+- Utilização de JPA (_Java Persistence Annotations_)
+- Utilização de EclipseLink para desenvolvimento JPA 
+- Utilização de MySQL como banco (_open-source_)
+- Utilização de LaTeX para processamento de textos documentais
+- Utilização de Milestones do _github_ para controle de datas e prazos
+- Utilização de Geração de _issues_ do _github_ para elaboração de tarefas
+- Email e grupos de redes sociais (_facebook_) para comunicação
+- WindowBuilderPro para geração facilitada de interface gráfica em java
+
+
+### Processo de Desenvolvimento Adotado
+
+O processo de desenvolvimento adotado é próximo das metodologias tradicionais, nos quais só há uma etapa em progresso a cada momento (nunca haverá duas etapas de desenvolvimento em paralelo). Definimos assim ela como "Espiral incremental". 
+
+### Arquitetura de Software Adotada
+
+A arquitetura adotada neste projeto é a **MVC** -- _Model, View and Controller_ -- pois o código se torna padronizado, de fácil refatoração e posteriores manutenções (reduções de custos e esforços em etapas de correções, manutenções e inserções de funcionalidades novas)
+
+
 ## Grupo de Desenvolvimento
 1. **Gerente**: Paulo Batista da Costa
 2. **Projetista**: Felipe Veiga Ramos
@@ -45,7 +77,3 @@ Este repositório está organizado utilizando o critério de hierarquia
 
 
 
-
-
-# Projeto2-ES2
-Projeto 2 de Engenharia de Software - UTFPR 2016 / 1
