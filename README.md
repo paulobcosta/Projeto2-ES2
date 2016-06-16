@@ -1,7 +1,9 @@
 
 # Projeto II - Engenharia de Software II
 
-## Universidade Tecnológica Federal do Paraná 2016/1
+### Universidade Tecnológica Federal do Paraná 2016/1
+
+   ![Alt Text](https://github.com/paulobcosta/Projeto2-ES2/blob/master/Documenta%C3%A7%C3%A3o/Planejamento%20de%20Projeto%20de%20Software/logoutfpr.jpg)
 
 Este projeto é referente ao trabalho executado na disciplina de Engenharia de Software II com propósitos avaliativos.
 
