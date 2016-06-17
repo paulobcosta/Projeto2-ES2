@@ -56,7 +56,7 @@ Isso tem o objetivo de facilitar a compreensão do conteúdo aqui disponível
 - Utilização de JPA (_Java Persistence Annotations_)
 - Utilização de EclipseLink para desenvolvimento JPA 
 - Utilização de MySQL como banco (_open-source_)
-- Utilização de LaTeX para processamento de textos documentais
+- Utilização de LaTeX para processamento de textos documentais 
 - Utilização de Milestones do _github_ para controle de datas e prazos
 - Utilização de Geração de _issues_ do _github_ para elaboração de tarefas
 - Email e grupos de redes sociais (_facebook_) para comunicação
