@@ -1,0 +1,66 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\author{Paulo Batista da Costa}
+\title{}
+
+\begin{document}
+		\begin{titlepage}
+	        \LARGE
+	        	\begin{center}
+	        	\vspace{5cm} 
+	        	\textbf{Universidade Tecnológica Federal do Paraná \\ \vspace{1.8cm}}
+	        	\includegraphics[scale=0.35]{logoutfpr.jpg} \\ \vspace{1.8cm}
+	        	\textit{Engenharia de Software II} \vspace{2cm} \\
+	        	Paulo Batista da Costa \\ 1509764 \vspace{2cm} \\ 
+	        	PROJETO 2 - ESPECIFICAÇÃO FERRAMENTAL\vspace{2cm} \\
+	        	Departamento de Ciência da Computação (DACOM) 
+	        	
+	        	\end{center}
+	        \end{titlepage}	
+	\tableofcontents
+	\newpage
+	\section{Da Natureza deste Documento}
+	\paragraph{} Este documento traz à tona a especificação das ferramentas suas respectivas funcionalidades. Assim, aqui explicita-se como cada etapa de desenvolvimento será gerenciada. Antes de tudo, é necessário entender que as ferramentas de um projeto de \textit{software} dão suporte ao gerente e aos participantes para que estes controlem todas as etapas do trabalho. Caso alguma etapa tenha seu gerenciamento falho ou ineficaz é necessário que se façam as correções necessárias tanto no processo organizacional, bem como, adicionando ou modificando o conjunto ferramental utilizado.
+	\paragraph{}
+	\section{Necessidades: áreas gerenciáveis dentro do processo de desenvolvimento de software}
+	\paragraph{} Nesta seção, há a explicitação das áreas gerenciáveis no projeto. Em outras palavras, as necessidades tidas em processo de desenvolvimento que devem ser analisadas e tomadas como foco tanto da parte gerencial quanto ao desenvolvimento propriamente dito.
+	\paragraph{} A priori, as áreas principais do desenvolvimento de software são: projeção diagramática de software,desenvolvimento de código, gerenciamento de atividades. A seguir, as devidas explicações a respeito dos campos de desenvolvimento e a definição de ferramentas utilizadas na disciplina de engenharia de \textit{software} II.
+	\subsection{Projeção Diagramática de Software}
+	\paragraph{} Aqui se dá o início do desenvolvimento. Nesta etapa o projetista é responsável pela leitura da documentação, bem como, a captação dos defeitos elaborados através da execução da prática de \textbf{PBR}. Assim, com a abstração obtida das necessidades e defeitos, ele é responsável por traduzir os requisitos em diagramas que serão interpretados pela equipe de desenvolvimento. Aqui faz-se necessário a utilização de ferramentas que promovam a facilidade  da diagramação.
+	\subsection{Desenvolvimento de Código}
+	\paragraph{}A etapa de desenvolvimento de código é executada pelo programador do projeto. Assim, ele é responsável pela tradução de diagramas em código. A produção intelectual, neste caso, depende do trabalho realizado pelo projetista porque este abstraiu e traduziu em linguagem diagramática o conteúdo presente na especificação do produto. Aqui faz-se necessário a utilização de ferramentas que facilitem o processo de implementação de código (afim de diminuir o tempo de implementação).
+	\subsection{Gerenciamento de Atividades}
+	\paragraph{}A etapa de gerenciamento de atividades é complexa e faz parte das obrigações do gerente(s) do projeto. No caso, ele tem de garantir que as etapas sejam executadas de forma correta, além de assumir a responsabilidade sobre as mesmas. Além disso, deve monitorar através de ferramentas para garantir que o processo não detenha altos recursos no processo de desenvolvimento e acarrete em prejuízos.
+ 
+	\section{Descrição Ferramental: a definição das ferramentas utilizadas}
+	\subsection{Ferramental: Projeção Diagramática de Software}
+	\paragraph{} Nesta etapa é necessário a utilização de ferramentas para geração de diagramas. Assim, a gerência tomou a decisão de utilizar o \textbf{ArgoUml}  para a realização de diagramas. Esta foi escolhida por ser uma ferramenta consagrada e de código aberto de fácil utilização. Ela permite a elaboração de diagramas de casos de uso e de classe (os dois diagramas que serão realizados a priori pelo projetista).
+	\subsection{Ferramental: Desenvolvimento de Código}
+	\paragraph{} Nesta etapa o código será implementado. Para tal é necessário a utilização de ferramentas que facilitem a geração de código e diminuam o tempo de desenvolvimento. Assim, foi determinado pela gerência a utilização da IDE \textbf{Eclipse} para a elaboração de código em Java. Além disso, a inclusão de JPA (\textit{Java Persistence Annotation}) combinado de um ORM (Hibernate/EclipseLink) será utilizada para a redução do tempo consumido para implementaçãod e banco de dados. Ainda há a inserção do plugin \textbf{WindowBuilderPro} do eclipse para a facilitação da construção da interface gráfica. 
+	\subsection{Ferramental: Gerência das etapas de Desenvolvimento}
+	\paragraph{} Esta etapa ocorre durante todo o processo de desenvolvimento, desde o início até o término. Ela é referente ao controle da qualidade e eficiência do trabalho de todos os integrantes do projeto de \textit{software}. Assim, é necessário um conjunto de ferramentas. 
+	\paragraph{} A priori, para a comunicação entre os membros da equipe foi determinado a utilização de redes sociais -- no caso o \textit{facebook} -- pois permite a rápida comunicação. Estes recursos são fundamentais para manter a integração entre os envolvidos no desenvolvimento, bem como, para fatores humanos (discussão de problemas decorrentes de fatores diversos). Soma-se a este recurso a utilização de emails para a comunicação de assuntos estritamente ligados à etapas de desenvolvimento (o email possui a vantagem de ser documentado).
+	\paragraph{} Já para o controle das atividades relacionadas à implementações, diagramações e testes o gerente utilizará o sistema de \textit{issues} do \textit{github} (github também promove o versionamento, pois é baseado no git). Este provém a marcação de datas de execução, comentários ligados a duvidas e necessidades do projeto e também a verificação das etapas. Além disso, a ferramenta \textit{waffle} disponível em \textit{waffle.io} foi utilizada. Esta promove a automatização da criação de cartões (KAMBAM) mapeando \textit{issues} do github. Além disso, ela promove a elaboração de gráficos que permitem ao gerente a visualização do esforço tipo por cada membro da equipe. Ainda sobre essa ferramenta, ela promove a fácil atribuição do peso das tarefas.
+	Para o controle de prazos e de marcos de desenvolvimento, a gerência definiu a utilização de \textit{Milestones}. Estes simplesmente definem marcos e datas do desenvolvimento, o que dá ideia geral a respeito do andamento do processo.
+	
+	\section{Lista simplificada: Ferramental}
+	Aqui verifica-se a lista simplificada de ferramentas utilizadas no processo de desenvolvimento de software.
+	\begin{itemize}
+	\item IDE Eclipse
+	\item JPA + Hibernate/EclipseLink
+	\item WindowBuilderPro3
+	\item github e git
+	\item LaTeX para elaboração documental
+	\item ArgoUml: elaboração de diagramas
+	\item Waffle : gerenciamento de tarefas e desenvolvimento
+	\item \textit{facebook}: comunicação ágil
+	\item email: comunicação documentada
+	\end{itemize}
+\end{document}
