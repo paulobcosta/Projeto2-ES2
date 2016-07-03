@@ -3,6 +3,11 @@
  */
 package projeto2.transacoes;
 
+import java.awt.Window.Type;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,6 +15,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import projeto2.dao.base.EntidadeBase;
 
@@ -30,9 +37,21 @@ public class Transacao implements EntidadeBase {
 	private Double valor;
 	@Column(name="descricao",nullable=false)
 	private String descricao;
+	@Temporal(TemporalType.DATE)
+	@Column(name="data_da_transacao",nullable=false)
+	private Date data;
 	/**
 	 * @return the valorAbsoluto
 	 */
+	public Transacao() {
+		
+	}
+	
+	public Transacao(double valor,String descricao) {
+		this.valor = new Double(valor);
+		this.descricao = descricao;
+		this.data = new Date();
+	}
 	public Double getValor() {
 		return valor;
 	}
@@ -63,6 +82,21 @@ public class Transacao implements EntidadeBase {
 		// TODO Auto-generated method stub
 		return this.id;
 	}
+
+	public Date getData() {
+		return data;
+	}
+
+	public void setData(Date data) {
+		this.data = data;
+	}
+	
+	public void setData(String data) throws ParseException {
+		SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+		Date dataFormatada = formato.parse(data);
+		this.data = dataFormatada;
+	}
+	
 	
 	
 }
