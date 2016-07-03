@@ -26,8 +26,9 @@ public class Transacao implements EntidadeBase {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, 
     generator = "TRANS_SEQ")
 	private Long id;
-	@Column(name = "v")
+	@Column(name = "valor",nullable=false)
 	private Double valor;
+	@Column(name="descricao",nullable=false)
 	private String descricao;
 	/**
 	 * @return the valorAbsoluto

@@ -15,6 +15,10 @@ import javax.persistence.GenerationType;
 
 import static javax.persistence.GenerationType.AUTO;
 
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 import javax.persistence.Column;
 
 /**
@@ -53,9 +57,23 @@ public class Senha implements EntidadeBase {
 	}
 	/**
 	 * @param senha the senha to set
+	 * @throws UnsupportedEncodingException 
+	 * @throws NoSuchAlgorithmException 
 	 */
-	public void setValor(String senha) {
-		this.valor = senha;
+	public void setValor(String senha) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+		
+		this.valor = encriptarPorMD5(senha);
 	}
 
+	private String encriptarPorMD5(String senha) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+		MessageDigest algorithm = MessageDigest.getInstance("MD5");
+        byte messageDigest[] = algorithm.digest(senha.getBytes("UTF-8"));
+
+        StringBuilder hexString = new StringBuilder();
+        for (byte b : messageDigest) {
+            hexString.append(String.format("%02X", 0xFF & b));
+        }
+        String senhaCriptografada = hexString.toString();
+        return senhaCriptografada;
+	}
 }

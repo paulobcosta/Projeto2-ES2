@@ -3,6 +3,7 @@
 	<persistence-unit name="Projeto2_Code" transaction-type="RESOURCE_LOCAL">
 	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 	<class>projeto2.entidades.seguranca.Senha</class>
+	<class>projeto2.transacoes.Transacao</class>
 		<properties>
 			<property name="eclipselink.jdbc.batch-writing" value="JDBC"/>
 			<property name="javax.persistence.jdbc.user" value="root"/>
