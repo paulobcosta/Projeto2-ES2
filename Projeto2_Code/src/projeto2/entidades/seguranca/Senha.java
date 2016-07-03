@@ -62,7 +62,8 @@ public class Senha implements EntidadeBase {
 	 */
 	public void setValor(String senha) throws NoSuchAlgorithmException, UnsupportedEncodingException {
 		
-		this.valor = encriptarPorMD5(senha);
+		//this.valor = encriptarPorMD5(senha);
+		this.valor = senha;
 	}
 
 	private String encriptarPorMD5(String senha) throws NoSuchAlgorithmException, UnsupportedEncodingException {

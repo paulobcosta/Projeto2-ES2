@@ -7,6 +7,8 @@ import projeto2.dao.ContaDAO;
 import projeto2.dao.SenhaDAO;
 import projeto2.entidades.conta.Conta;
 import projeto2.entidades.seguranca.Senha;
+import projeto2.paineis.PainelLogin;
+import projeto2.paineis.PainelOperacao;
 import projeto2.transacoes.Transacao;
 
 /**
@@ -26,10 +28,9 @@ public class Principal {
 		Conta c = new Conta();
 		ContaDAO cd = new ContaDAO();
 		Transacao t = new Transacao();
-		cd.persist(c);
-		c.creditaValor(3000.00);
-		c.debitaValor(1400, "compra de bicicleta");
-		cd.persist(c);
+		
+		PainelLogin pL = new PainelLogin(s, c);
+		pL.setVisible(true);
 	}
 
 }
