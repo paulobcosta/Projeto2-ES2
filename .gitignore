@@ -3,3 +3,11 @@
 *.synctex
 *.log
 *.gz
+*.class
+Projeto2_Code/lib/mysql-connector-java-5.1.39/docs
+Projeto2_Code/lib/mysql-connector-java-5.1.39/src
+Projeto2_Code/lib/mysql-connector-java-5.1.39/README
+Projeto2_Code/lib/mysql-connector-java-5.1.39/README.txt
+Projeto2_Code/lib/mysql-connector-java-5.1.39/build.xml
+Projeto2_Code/lib/mysql-connector-java-5.1.39/COPYING
+Projeto2_Code/lib/mysql-connector-java-5.1.39/CHANGES
