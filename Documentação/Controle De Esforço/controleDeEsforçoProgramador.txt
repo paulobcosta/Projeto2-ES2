@@ -1,0 +1,19 @@
+Controle de Esforço Para Programador
+
+Implementação de Classes:
+
+Data: 03/07/2016
+Horário de início: 11h e 07 min
+Horário de Término:17h e 35 min
+
+Implementação de BD (Por JPA)
+
+Data: 03/07/2016
+Horário de início: 13h e 10 min
+Horário de Término: 17h e 35 min
+
+Implementação de Interface Gráfica
+
+Data: 03 /07/2016
+Horário de início: 19h e 29 min 
+Horário de Término: 20h e 30 min
