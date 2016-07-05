@@ -7,8 +7,8 @@ Tempo consumido para elaboração de diagrama de casos de uso:
 - Horário de Término: 18h e 30 min
 
 Tempo efetivamente consumido: cerca de 6 horas.
-Tempo previamente estimado: 3,16 horas
-*estimativa falha por aproximadamente 3 horas
+
+
 
 Tempo consumido para elaboração de diagrama de classes:
 
@@ -17,8 +17,7 @@ Tempo consumido para elaboração de diagrama de classes:
 - Horário de Término: 18h e 38 min
 
 Tempo efetivamente consumido: cerca de 6 horas.
-Tempo previamente estimado: 4,5 horas
-*estimativa falha por aproximadamente 1,5 horas
+
 
 
 [Projetista: Felipe V. Ramos]
