@@ -14,6 +14,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -28,6 +29,7 @@ import projeto2.transacoes.Transacao;
 @Entity
 @SequenceGenerator(name = "CNT_SEQ", sequenceName = "CONTA_SEQ", initialValue = 1, allocationSize = 1)
 @Table(name = "contas")
+@NamedQuery(name ="Conta.buscaPorId",query="SELECT c FROM Conta c WHERE c.id = :id")
 public class Conta implements EntidadeBase {
 
 	@Id

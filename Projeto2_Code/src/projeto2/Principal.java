@@ -25,9 +25,9 @@ public class Principal {
 		Senha s = new Senha("123");
 		SenhaDAO sd = new SenhaDAO();
 		sd.persist(s);
-		Conta c = new Conta();
-		ContaDAO cd = new ContaDAO();
-		Transacao t = new Transacao();
+		
+		ContaDAO dao = new ContaDAO();
+		Conta c = dao.buscaContaPorId(new Long(1));
 		
 		PainelLogin pL = new PainelLogin(s, c);
 		pL.setVisible(true);
