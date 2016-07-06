@@ -6,22 +6,20 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/com.sun.tools.xjc_2.2.0.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/com.sun.xml.bind_2.2.0.v201004141950.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/commonj.sdo_2.1.1.v201112051852.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/COPYING"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/eclipselink.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/javax.activation_1.1.0.v201108011116.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/javax.mail_1.4.0.v201005080615.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/javax.persistence_2.1.0.v201304241213.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/javax.persistence.source_2.1.0.v201304241213.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/javax.xml.bind_2.2.0.v201105210648.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/javax.xml.stream_1.0.1.v201004272200.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/mysql-connector-java-5.1.39-bin.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/org.eclipse.persistence.jpa.modelgen_2.5.2.v20140319-9ad6abd.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/org.eclipse.persistence.jpa.modelgen.source_2.5.2.v20140319-9ad6abd.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39/org.eclipse.persistence.jpars.source_2.5.2.v20140319-9ad6abd.jar"/>
+	<classpathentry kind="lib" path="src/com.sun.tools.xjc_2.2.0.jar"/>
+	<classpathentry kind="lib" path="src/com.sun.xml.bind_2.2.0.v201004141950.jar"/>
+	<classpathentry kind="lib" path="src/commonj.sdo_2.1.1.v201112051852.jar"/>
+	<classpathentry kind="lib" path="src/eclipselink.jar"/>
+	<classpathentry kind="lib" path="src/javax.activation_1.1.0.v201108011116.jar"/>
+	<classpathentry kind="lib" path="src/javax.mail_1.4.0.v201005080615.jar"/>
+	<classpathentry kind="lib" path="src/javax.persistence_2.1.0.v201304241213.jar"/>
+	<classpathentry kind="lib" path="src/javax.persistence.source_2.1.0.v201304241213.jar"/>
+	<classpathentry kind="lib" path="src/javax.xml.bind_2.2.0.v201105210648.jar"/>
+	<classpathentry kind="lib" path="src/javax.xml.stream_1.0.1.v201004272200.jar"/>
+	<classpathentry kind="lib" path="src/mysql-connector-java-5.1.39-bin.jar"/>
+	<classpathentry kind="lib" path="src/org.eclipse.persistence.jpa.modelgen_2.5.2.v20140319-9ad6abd.jar"/>
+	<classpathentry kind="lib" path="src/org.eclipse.persistence.jpa.modelgen.source_2.5.2.v20140319-9ad6abd.jar"/>
+	<classpathentry kind="lib" path="src/org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar"/>
+	<classpathentry kind="lib" path="src/org.eclipse.persistence.jpars.source_2.5.2.v20140319-9ad6abd.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
